@@ -1,4 +1,4 @@
-#OpenTelemetry Platform
+# OpenTelemetry Platform
 A data visualization platform for Intel Engineers
 
 What's the purpose of the project?
