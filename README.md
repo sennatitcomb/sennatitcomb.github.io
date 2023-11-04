@@ -1,8 +1,6 @@
 # Senna Titcomb Portfolio
 
-## Relevant Projects: OpenTelemetry Platform
-A data visualization platform for Intel Engineers
-https://sites.google.com/oregonstate.edu/otelplatform/home?authuser=0
+## Open My Website: https://sennatitcomb.github.io/
 
 2023 Senna Titcomb
 
