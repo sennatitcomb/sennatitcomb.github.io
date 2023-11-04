@@ -97,7 +97,7 @@ li {
 
 a img {
     width: 20px;
-    margin: 0px; 
+    margin-top: 5px; 
 }
 
 .download-button {
@@ -113,4 +113,36 @@ a img {
 
 .download-button:hover {
     background-color: #005fba; /* Button background color on hover */
+}
+
+/* Style the Recommendations section */
+#recommendations {
+    background-color: #f8f8f8; /* Background color for the section */
+    padding: 20px;
+}
+
+.recommendation-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px; /* Add spacing between recommendations */
+    padding: 20px;
+    border: 1px solid #ddd; /* Add a border for each recommendation */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+}
+
+.author {
+    font-weight: bold;
+    color: #555;
 }
