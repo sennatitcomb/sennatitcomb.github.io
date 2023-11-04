@@ -59,6 +59,9 @@ footer {
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
+    position: absolute;
+    transition: transform 0.2s ease;
+    
 }
 
 .skill-popup {

@@ -4,6 +4,30 @@ const skillPopupTitle = skillPopup.querySelector('h3');
 const skillPopupDescription = skillPopup.querySelector('p');
 const closePopup = skillPopup.querySelector('.close-popup');
 
+const skillBubbles = document.querySelectorAll('.skill-bubble');
+
+// Add mousemove event listener to the skills container
+const skillsContainer = document.querySelector('.skills-container');
+skillsContainer.addEventListener('mousemove', (e) => {
+    skillBubbles.forEach((bubble) => {
+        moveBubble(bubble, e);
+    });
+});
+
+// Function to move a bubble
+function moveBubble(bubble, event) {
+    const bubbleRect = bubble.getBoundingClientRect();
+    const containerRect = skillsContainer.getBoundingClientRect();
+    
+    // Calculate the new position for the bubble
+    const newX = event.clientX - containerRect.left - bubbleRect.width / 2;
+    const newY = event.clientY - containerRect.top - bubbleRect.height / 2;
+    
+    // Update the bubble's position
+    bubble.style.transform = `translate(${newX}px, ${newY}px)`;
+}
+
+
 skillBubbles.forEach((bubble) => {
     bubble.addEventListener('click', () => {
         // Get the skill name from the data-skill attribute of the clicked bubble
