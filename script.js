@@ -6,8 +6,8 @@ const closePopup = skillPopup.querySelector('.close-popup');
 
 skillBubbles.forEach((bubble) => {
     bubble.addEventListener('click', () => {
-        skillPopupTitle.textContent = bubble.getAttribute('data-skill');
-        skillPopupDescription.textContent = 'Add your detailed skill description here.';
+        skillPopupTitle.textContent = bubble.getAttribute('Cloud Development');
+        skillPopupDescription.textContent = 'AWS (ECR, ECS, EKS, S3, Amplify, DynamoDB, Cognito, Sagemaker, VPC, EC2, IAM, Lambda, Prometheus, Grafana), Docker, Kubernetes, Terraform';
         skillPopup.style.display = 'block';
     });
 });
