@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: teal;
+    background-color: rgb(62, 227, 227);
     overflow: hidden;
 }
 
@@ -23,6 +23,10 @@ body {
     100% {
         transform: translate(calc(100% + 50%), calc(100% + 50%));
     }
+}
+
+header {
+    padding-left: 20px;
 }
 
 .container {
@@ -56,4 +60,8 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+}
+
+#projects {
+    background-color: #fff;
 }
