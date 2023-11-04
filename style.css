@@ -1,5 +1,28 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+    overflow: hidden;
+}
+
+#rainbow {
+    position: absolute;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    mix-blend-mode: difference;
+    animation: followMouse 0.5s linear infinite;
+}
+
+@keyframes followMouse {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(calc(100% + 50%), calc(100% + 50%));
+    }
 }
 
 .container {
