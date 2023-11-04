@@ -52,4 +52,4 @@ document.addEventListener('DOMContentLoaded', function () {
         skillPopup.style.display = 'none';
     });
 }
-
+);
