@@ -1,13 +1,17 @@
-// script.js
-const skillsSection = document.getElementById('skills');
-const skillsList = document.querySelector('.skills-list');
+const skillBubbles = document.querySelectorAll('.skill-bubble');
+const skillPopup = document.querySelector('.skill-popup');
+const skillPopupTitle = skillPopup.querySelector('h3');
+const skillPopupDescription = skillPopup.querySelector('p');
+const closePopup = skillPopup.querySelector('.close-popup');
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            skillsSection.classList.add('in-view');
-        }
+skillBubbles.forEach((bubble) => {
+    bubble.addEventListener('click', () => {
+        skillPopupTitle.textContent = bubble.getAttribute('data-skill');
+        skillPopupDescription.textContent = 'Add your detailed skill description here.';
+        skillPopup.style.display = 'block';
     });
 });
 
-observer.observe(skillsSection);
+closePopup.addEventListener('click', () => {
+    skillPopup.style.display = 'none';
+});

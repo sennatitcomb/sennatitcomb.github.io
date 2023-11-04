@@ -5,25 +5,6 @@ body {
     background-color: rgb(188, 247, 247);
 }
 
-#rainbow {
-    position: absolute;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    mix-blend-mode: difference;
-    animation: followMouse 0.5s linear infinite;
-}
-
-@keyframes followMouse {
-    0% {
-        transform: translate(-50%, -50%);
-    }
-    100% {
-        transform: translate(calc(100% + 50%), calc(100% + 50%));
-    }
-}
-
 header {
     padding-left: 20px;
 }
@@ -65,19 +46,30 @@ footer {
     background-color: #f8f8f8; 
 }
 
-.skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#skills.in-view .skills-list {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.skill-bubble {
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.skill-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 

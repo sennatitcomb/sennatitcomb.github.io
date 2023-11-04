@@ -29,15 +29,22 @@
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Cloud Development</li>
-                <li>Human-Computer Interaction</li>
-                <li>User Interface (UI) Design</li>
-                <li>User Experience (UX) Design</li>
-                <li>Project Management</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-bubble" data-skill="Cloud Development">Cloud Development</div>
+                <div class="skill-bubble" data-skill="Human-Computer Interaction">Human-Computer Interaction</div>
+                <div class="skill-bubble" data-skill="UI Design">UI Design</div>
+                <div class="skill-bubble" data-skill="UX Design">UX Design</div>
+                <div class="skill-bubble" data-skill="Project Management">Project Management</div>
+            </div>
         </div>
-    </section>    
+    </section>
+    
+    <!-- Pop-up for detailed skill description -->
+    <div class="skill-popup">
+        <span class="close-popup">&times;</span>
+        <h3></h3>
+        <p></p>
+    </div>        
 
     <section id="projects" class="section">
         <div class="container">
