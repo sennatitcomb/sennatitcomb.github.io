@@ -66,6 +66,22 @@ footer {
     background-color: #f8f8f8; 
 }
 
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateX(100%); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#skills.in-view .skills-list {
+    opacity: 1;
+    transform: translateX(0); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
 ul {
     list-style: none; /*Get rid of list styling*/
     padding: 0;
