@@ -5,23 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senna Titcomb - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            overflow: hidden;
-        }
-        .bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
-        .blue-square {
-            width: 15px;
-            height: 15px;
-            background-color: blue;
-            position: absolute;
-        }
-    </style>
+    <script>
+        const rainbow = document.getElementById('rainbow');
+   
+        document.addEventListener('mousemove', (e) => {
+            rainbow.style.left = e.clientX + 'px';
+            rainbow.style.top = e.clientY + 'px';
+        });
+    </script>
 </head>
 <body>
     <div id="rainbow"></div>
@@ -59,14 +50,13 @@
                     To see the Figma prototype: https://www.figma.com/proto/BWBJC3QOEItwG86KUrMKOn/WeRide?node-id=12-3&starting-point-node-id=12%3A3&scaling=scale-down
                 </p>
             </div>
-            <!-- Add more project sections as needed -->
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>If you'd like to get in touch, you can reach me at: sennatitcomb@email.com</p>
+            <p>To get in touch, you can reach me at: sennatitcomb@gmail.com</p>
         </div>
     </section>
 
