@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(62, 227, 227);
+    background-color: rgb(188, 247, 247);
     overflow: hidden;
 }
 
@@ -81,6 +81,21 @@ li {
 }
 
 a img {
-    width: 40px;
+    width: 20px;
     margin: 10px; 
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cccccc; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #005fba; /* Button background color on hover */
 }
