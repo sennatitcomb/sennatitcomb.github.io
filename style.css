@@ -65,3 +65,8 @@ footer {
 #projects {
     background-color: #fff;
 }
+
+a img {
+    width: 40px;
+    margin: 10px; 
+}
