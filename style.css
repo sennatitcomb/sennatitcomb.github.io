@@ -62,6 +62,20 @@ footer {
     padding: 10px 0;
 }
 
+#skills {
+    background-color: #f8f8f8; 
+}
+
+ul {
+    list-style: none; /*Get rid of list styling*/
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Add spacing between skills */
+}
+
+
 #projects {
     background-color: #fff;
 }
