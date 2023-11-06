@@ -17,10 +17,21 @@ document.addEventListener('DOMContentLoaded', function () {
             } else if (skillName === 'Human-Computer Interaction') {
                 skillPopupTitle.textContent = skillName;
                 skillPopupDescription.textContent = 'User Research, User Testing, Prototyping, Usability Testing, User Interviews, User Surveys, User Personas, User Stories, User Flows, Visual Design, User Interface Design, User Experience Design, User-Centered Design, Design Thinking, Waterfall, Agile, Scrum, Jira, Figma, Adobe Photoshop, Adobe Illustrator, Git, GitHub';
-            } else if (skillName === 'Web Development') {
+            } else if (skillName === 'UI Design') {
+                skillPopupTitle.textContent = skillName;
+                skillPopupDescription.textContent = 'User Interface Design, User Experience Design, User-Centered Design, Design Thinking, Figma, Adobe Photoshop';
+            }else if (skillName === 'UX Research') {
+                skillPopupTitle.textContent = skillName;
+                skillPopupDescription.textContent = 'User Research, User Testing, Prototyping, Usability Testing, User Interviews, User Surveys, User Personas, User Stories, User Flows';
+            }else if (skillName === 'Web Development') {
                 skillPopupTitle.textContent = skillName;
                 skillPopupDescription.textContent = 'HTML, CSS, JavaScript, React, React Native, Node.js, Express.js, User Interface Design, User Experience Design, User-Centered Design, Figma, Git, GitHub';
-            }
+            }else if (skillName === 'Programming Languages') {
+                skillPopupTitle.textContent = skillName;
+                skillPopupDescription.textContent = 'Python, JavaScript, Java, C++, C, SQL, HTML, CSS';
+            }else if (skillName === 'Software Development') {
+                skillPopupTitle.textContent = skillName;
+                skillPopupDescription.textContent = 'Waterfall, Agile, Jira, Github, SDLC';
             
             skillPopup.style.display = 'block';
         });
