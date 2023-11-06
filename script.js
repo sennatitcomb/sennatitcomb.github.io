@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else if (skillName === 'UI Design') {
                 skillPopupTitle.textContent = skillName;
                 skillPopupDescription.textContent = 'User Interface Design, User Experience Design, User-Centered Design, Design Thinking, Figma, Adobe Photoshop';
-            }else if (skillName === 'UX Research') {
+            }else if (skillName === 'UX Design') {
                 skillPopupTitle.textContent = skillName;
                 skillPopupDescription.textContent = 'User Research, User Testing, Prototyping, Usability Testing, User Interviews, User Surveys, User Personas, User Stories, User Flows';
             }else if (skillName === 'Web Development') {
