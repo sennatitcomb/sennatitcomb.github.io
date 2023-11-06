@@ -32,7 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }else if (skillName === 'Software Development') {
                 skillPopupTitle.textContent = skillName;
                 skillPopupDescription.textContent = 'Waterfall, Agile, Jira, Github, SDLC';
+            }else if (skillName === 'Project Management') {
+                skillPopupTitle.textContent = skillName;
+                skillPopupDescription.textContent = 'Leadership, Waterfall, Agile, Scrum, Jira, Github, SDLC';
             }
+
             skillPopup.style.display = 'block';
         });
     });
