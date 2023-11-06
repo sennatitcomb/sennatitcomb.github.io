@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }else if (skillName === 'Software Development') {
                 skillPopupTitle.textContent = skillName;
                 skillPopupDescription.textContent = 'Waterfall, Agile, Jira, Github, SDLC';
-            
+            }
             skillPopup.style.display = 'block';
         });
     });
