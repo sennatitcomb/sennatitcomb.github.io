@@ -1,6 +1,6 @@
 # Senna Titcomb Portfolio
 
-## Open My Website: https://sennatitcomb.github.io/
+## To run locally, npm start
 
 2023 Senna Titcomb
 
