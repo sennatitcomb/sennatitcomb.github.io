@@ -5,6 +5,12 @@ body {
     background-color: rgb(188, 247, 247);
 }
 
+.name {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateZ(5px);
+}
+
 header {
     padding-left: 20px;
 }
@@ -18,6 +24,35 @@ header {
 .section {
     padding: 40px 0;
     text-align: center;
+}
+
+.section::before, .section::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #0074e1;
+    border-radius: 50%;
+    animation: float 3s infinite ease-in-out;
+}
+
+.section::before {
+    top: -10px;
+    left: 30px;
+}
+
+.section::after {
+    bottom: -10px;
+    right: 30px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 nav ul {
@@ -152,7 +187,7 @@ blockquote {
 }
 
 .project-image img {
-    max-width: 50%; /* Reduce the image size by 50% */
+    max-width: 40%; /* Reduce the image size% */
     height: auto;
     display: block; /* Center the image */
     margin: 0 auto;
@@ -161,3 +196,4 @@ blockquote {
 .project p {
     margin-top: 10px;
     color: #333;
+}
