@@ -139,3 +139,27 @@ blockquote {
     font-weight: bold;
     color: #555;
 }
+
+.design-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project p {
+    margin-top: 10px;
+    color: #333;
+}
