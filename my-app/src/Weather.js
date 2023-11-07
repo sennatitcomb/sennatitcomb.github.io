@@ -8,7 +8,7 @@ const WeatherComponent = () => {
   const fetchWeatherData = async () => {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=1c3b6cd500adf65e2a3f7ec2f7c1b6c1`
+        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=APIKEY`
       );
       const data = await response.json();
       setWeatherData(data);
