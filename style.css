@@ -187,7 +187,7 @@ blockquote {
 }
 
 .project-image img {
-    max-width: 40%; /* Reduce the image size% */
+    max-width: 70%; /* Reduce the image size% */
     height: auto;
     display: block; /* Center the image */
     margin: 0 auto;
