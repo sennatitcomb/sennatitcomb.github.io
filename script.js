@@ -44,5 +44,70 @@ document.addEventListener('DOMContentLoaded', function () {
     closePopup.addEventListener('click', () => {
         skillPopup.style.display = 'none';
     });
+
+// JavaScript for the flipbook effect
+const gallery = document.querySelector('.photo-gallery');
+let isDragging = false;
+let startPosition = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let animationID = 0;
+
+// Add event listeners to detect mouse drag
+gallery.addEventListener('mousedown', (e) => startDragging(e));
+gallery.addEventListener('mousemove', (e) => drag(e));
+gallery.addEventListener('mouseup', () => endDragging());
+gallery.addEventListener('mouseleave', () => endDragging());
+
+function startDragging(e) {
+  isDragging = true;
+  startPosition = e.pageX - gallery.offsetLeft;
+  prevTranslate = currentTranslate;
+  if (animationID) {
+    cancelAnimationFrame(animationID);
+  }
+}
+
+function drag(e) {
+  if (isDragging) {
+    const currentPosition = e.pageX - gallery.offsetLeft;
+    currentTranslate = prevTranslate + currentPosition - startPosition;
+  }
+}
+
+function endDragging() {
+  isDragging = false;
+  const threshold = gallery.clientWidth / 4;
+  if (Math.abs(currentTranslate) > threshold) {
+    if (currentTranslate > 0) {
+      // Move to the previous image
+      navigate(-1);
+    } else {
+      // Move to the next image
+      navigate(1);
+    }
+  } else {
+    // Snap back to the current image
+    navigate(0);
+  }
+}
+
+function navigate(direction) {
+  const cardWidth = gallery.firstElementChild.offsetWidth;
+  currentTranslate = direction * cardWidth;
+  // Smooth animation when navigating
+  const moveCards = () => {
+    currentTranslate -= currentTranslate * 0.1;
+    setTransform(currentTranslate);
+    if (Math.abs(currentTranslate) < 1) return;
+    animationID = requestAnimationFrame(moveCards);
+  };
+  moveCards();
+}
+
+function setTransform(translate) {
+  gallery.style.transform = `translateX(${translate}px)`;
+}
+
 }
 );

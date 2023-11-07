@@ -197,3 +197,19 @@ blockquote {
     margin-top: 10px;
     color: #333;
 }
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a grid with flexible columns */
+    grid-gap: 10px; /* Add spacing between images */
+}
+
+.photo {
+    border: 2px solid #fff; /* White border around each image */
+    overflow: hidden; /* Hide overflow if images have different sizes */
+}
+
+.photo img {
+    width: 100%; /* Ensure images take up the full space within their containers */
+    height: auto;
+}
