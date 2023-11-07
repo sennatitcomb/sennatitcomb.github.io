@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(188, 247, 247);
+}
+
+.name {
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateZ(5px);
+}
+
+header {
+  padding-left: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#skills {
+  background-color: #f8f8f8; 
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.skill-bubble {
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.skill-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+ul {
+  list-style: none; /*Get rid of list styling*/
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px; /* Add spacing between skills */
+}
+
+
+#projects {
+  /*Projects Styling*/
+}
+
+a img {
+  width: 20px;
+  margin-top: 5px; 
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cccccc; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #005fba; /* Button background color on hover */
+}
+
+/* Style the Recommendations section */
+#recommendations {
+  background-color: #f8f8f8; /* Background color for the section */
+  padding: 20px;
+}
+
+.recommendation-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px; /* Add spacing between recommendations */
+  padding: 20px;
+  border: 1px solid #ddd; /* Add a border for each recommendation */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+.author {
+  font-weight: bold;
+  color: #555;
+}
+
+.design-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+  text-align: center;
+}
+
+.project img {
+  width: 60%;
+  height: auto;
+  border: 1px solid #100e0e;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  display: block; /* Center the image */
+  margin: 0 auto;
+}
+
+#larger-image {
+  width: 80%;
+}
+
+.project p {
+  margin-top: 10px;
+  color: #333;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a grid with flexible columns */
+  grid-gap: 10px; /* Add spacing between images */
+}
+
+.photo {
+  border: 2px solid #fff; /* White border around each image */
+  overflow: hidden; /* Hide overflow if images have different sizes */
+}
+
+.photo img {
+  width: 100%; /* Ensure images take up the full space within their containers */
+  height: auto;
+}
