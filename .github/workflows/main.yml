@@ -12,12 +12,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14  # Adjust the Node.js version as needed
+
+      - name: Install Dependencies
+        run: npm install
+        working-directory: ./  # Set the working directory to your project root
+
       - name: Build and Deploy
         run: |
-          npm install
           npm run build
           mv build docs
-        # You may need to adjust the above commands based on your project setup
+        working-directory: ./  # Set the working directory to your project root
 
       - name: Commit and Push Changes
         run: |
@@ -26,3 +34,4 @@ jobs:
           git add docs/
           git commit -m "Deploy to GitHub Pages"
           git push
+        working-directory: ./  # Set the working directory to your project root
