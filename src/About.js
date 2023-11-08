@@ -1,6 +1,8 @@
 // About.js
 import React from 'react';
 import './index.css';
+import { Link } from 'react-router-dom';
+
 
 
 function About() {
@@ -8,13 +10,13 @@ function About() {
     <>
      <header>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="/designs">Designs</a></li>
-                <li><a href="/photos">Photography</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <ul>
+            <li><Link to="#about">About</Link></li>
+            <li><Link to="#projects">Projects</Link></li>
+            <li><Link to="/designs">Designs</Link></li>
+            <li><Link to="/photos">Photography</Link></li>
+            <li><Link to="#contact">Contact</Link></li>
+        </ul>
         </nav>
     </header>
     <section id="about" class="section about-container">

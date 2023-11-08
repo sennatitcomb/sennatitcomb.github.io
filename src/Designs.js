@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { Link } from 'react-router-dom';
 
 function Designs() {
   return (
@@ -7,8 +8,8 @@ function Designs() {
       <header>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/photos">Photography</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/photos">Photos</Link></li>
           </ul>
         </nav>
       </header>
