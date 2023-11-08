@@ -42,8 +42,8 @@ function About() {
 
         <div class="skill-popup">
             <span class="close-popup">&times;</span>
-            <h3></h3>
-            <p></p>
+            {/* <h3></h3>
+            <p></p> */}
         </div> 
 
         <section id="projects" class="section">
@@ -51,12 +51,12 @@ function About() {
             <h2>Projects</h2>
             <ul>
                 <li>
-                    <a href=" https://sites.google.com/oregonstate.edu/otelplatform/home?authuser=0" target="_blank">OpenTelemetry Data Analysis Platform</a>
+                    <a href=" https://sites.google.com/oregonstate.edu/otelplatform/home?authuser=0" target="_blank" rel="noreferrer">OpenTelemetry Data Analysis Platform</a>
                 </li>
                 <p>In this project, I helped conceptualize and create a telemetry data visualization platform for Intel. This was a comprehensive SaaS observability solution designed to empower Intel engineers with real-time insights into their cloud-native workloads. From initialization to production, this project entailed architecting and developing a cutting-edge platform that revolutionized how telemetry data is harnessed and leveraged for Intel's benefit.
                 </p>
                 <li>
-                    <a href="https://www.figma.com/proto/BWBJC3QOEItwG86KUrMKOn/WeRide?node-id=12-3&starting-point-node-id=12%3A3&scaling=scale-down" target="_blank">WeRide Transit Application</a>
+                    <a href="https://www.figma.com/proto/BWBJC3QOEItwG86KUrMKOn/WeRide?node-id=12-3&starting-point-node-id=12%3A3&scaling=scale-down" target="_blank" rel="noreferrer">WeRide Transit Application</a>
                 </li>
                 <p>WeRide is a broad-use transit application that helps suggest the best mode of transportation in regards to price, time, convenience, and distance.
                 </p>
@@ -97,7 +97,7 @@ function About() {
         <div class="container">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, please email me at sennatitcomb@gmail.com or connect with me on LinkedIn:
-                <a href="https://www.linkedin.com/in/sennatitcomb/" target="_blank">
+                <a href="https://www.linkedin.com/in/sennatitcomb/" target="_blank" rel="noreferrer">
                     <img src="linkedin-icon.png" alt="LinkedIn"/>
                 </a>
             </p>
