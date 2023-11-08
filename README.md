@@ -1,2 +1,2 @@
-# sennatitcomb.github.io
+# https://sennatitcomb.github.io
 Website and Personal Portfolio
