@@ -1,21 +1,26 @@
 // About.js
 import React from 'react';
 import './index.css';
-import { Link } from 'react-router-dom';
-
+import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
 function About() {
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
   return (
     <>
      <header>
         <nav>
         <ul>
-            <li><Link to="#about">About</Link></li>
-            <li><Link to="#projects">Projects</Link></li>
-            <li><Link to="/designs">Designs</Link></li>
-            <li><Link to="/photos">Photography</Link></li>
-            <li><Link to="#contact">Contact</Link></li>
+            <li><ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink></li>
+            <li><a href = "https://github.com/sennatitcomb" target="_blank" rel="noreferrer">Github</a>
+             </li>
+            <li><ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink></li>
+            <li><ReactRouterLink to="/designs">Designs</ReactRouterLink></li>
+            <li><ReactRouterLink to="/photos">Photography</ReactRouterLink></li>
+            <li><ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink></li>
         </ul>
         </nav>
     </header>
@@ -50,17 +55,29 @@ function About() {
 
         <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Projects </h2>
             <ul>
                 <li>
-                    <a href=" https://sites.google.com/oregonstate.edu/otelplatform/home?authuser=0" target="_blank" rel="noreferrer">OpenTelemetry Data Analysis Platform</a>
+                    <a href=" https://sites.google.com/oregonstate.edu/otelplatform/home?authuser=0" style={{ textDecoration: 'underline' }} target="_blank" rel="noreferrer">OpenTelemetry Data Analysis Platform</a>
                 </li>
                 <p>In this project, I helped conceptualize and create a telemetry data visualization platform for Intel. This was a comprehensive SaaS observability solution designed to empower Intel engineers with real-time insights into their cloud-native workloads. From initialization to production, this project entailed architecting and developing a cutting-edge platform that revolutionized how telemetry data is harnessed and leveraged for Intel's benefit.
                 </p>
                 <li>
-                    <a href="https://www.figma.com/proto/BWBJC3QOEItwG86KUrMKOn/WeRide?node-id=12-3&starting-point-node-id=12%3A3&scaling=scale-down" target="_blank" rel="noreferrer">WeRide Transit Application</a>
+                    <p>Business Intelligence Project: From SQL Tables to Visual Analytics</p>
+               </li>
+               <p>
+                Extraction of data from SQL databases and transforming into user-friendly dashboard for filtering, analysis, download, and reporting. Use of AWS, SQL, HTML/CSS/Javascript, Node.js, Python. For Intel internal use cases.
+                </p>
+                <li>
+                    <a href="https://www.figma.com/proto/BWBJC3QOEItwG86KUrMKOn/WeRide?node-id=12-3&starting-point-node-id=12%3A3&scaling=scale-down" style={{ textDecoration: 'underline' }} target="_blank" rel="noreferrer">WeRide Transit Application</a>
                 </li>
                 <p>WeRide is a broad-use transit application that helps suggest the best mode of transportation in regards to price, time, convenience, and distance.
+                </p>
+                <li>
+                    <p>Jaeger Trace Analysis</p>
+               </li>
+               <p>
+                Created Jupyter Notebooks to generate insightful visualizations from JSON files containing Jaeger traces, all within the context of Docker containerization. For Intel internal use cases.  
                 </p>
             </ul>
         </div>
@@ -109,7 +126,7 @@ function About() {
     </section>    
 
     <footer>
-        <p>&copy; 2023 Senna Titcomb</p>
+         <p onClick={scrollToTop}>&copy; 2023 Senna Titcomb</p>
     </footer>
     </>
 
