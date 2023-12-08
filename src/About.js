@@ -80,7 +80,7 @@ function About() {
                 Created Jupyter Notebooks to generate insightful visualizations from JSON files containing Jaeger traces, all within the context of Docker containerization. For Intel internal use cases.  
                 </p>
                 <li>
-                    <p>Floppy Fish Video Game</p>
+                 <a href="https://github.com/sennatitcomb/FLOPPY_FISH_VIDEO_GAME" style={{ textDecoration: 'underline' }} target="_blank" rel="noreferrer">Floppy Fish Video Game</a>
                </li>
                <p>
                 A website to host a video game I created using Node.js, HTML, CSS, and Javascript. Drawing inspiration from the iconic Flappy Bird, our game design incorporates the addictive simplicity and challenging gameplay that made Flappy Bird a phenomenon.
